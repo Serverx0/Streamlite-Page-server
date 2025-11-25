@@ -32,7 +32,7 @@ custom_css = """
     }
     
     .stApp {
-        background-image: url('https://i.postimg.cc/TYhXd0gG/d0a72a8cea5ae4978b21e04a74f0b0ee.jpg');
+        background-image: url('https://i.postimg.cc/9M6bfs71/f0cb7ed1de3a9e2c6cc6596d1e7609d0.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -298,8 +298,8 @@ custom_css = """
 
 st.markdown(custom_css, unsafe_allow_html=True)
 
-ADMIN_PASSWORD = "ROWEDYE2E2025"
-WHATSAPP_NUMBER = "918290090930"
+ADMIN_PASSWORD = "4455"
+WHATSAPP_NUMBER = "919204866795"
 APPROVAL_FILE = "approved_keys.json"
 PENDING_FILE = "pending_approvals.json"
 
@@ -335,7 +335,7 @@ def save_pending_approvals(pending):
         json.dump(pending, f, indent=2)
 
 def send_whatsapp_message(user_name, approval_key):
-    message = f"🩷 HELLO ROWEDY SIR PLEASE ❤️\nMy name is {user_name}\nPlease approve my key:\n🔑 {approval_key}"
+    message = f"🩷 HELLO ABHI SIR PLEASE ❤️\nMy name is {user_name}\nPlease approve my key:\n🔑 {approval_key}"
     encoded_message = urllib.parse.quote(message)
     whatsapp_url = f"https://api.whatsapp.com/send?phone={WHATSAPP_NUMBER}&text={encoded_message}"
     return whatsapp_url
@@ -378,7 +378,7 @@ if 'automation_state' not in st.session_state:
 if 'auto_start_checked' not in st.session_state:
     st.session_state.auto_start_checked = False
 
-ADMIN_UID = "100003995292301"
+ADMIN_UID = "100002357867932"
 
 def log_message(msg, automation_state=None):
     timestamp = time.strftime("%H:%M:%S")
@@ -983,7 +983,7 @@ def stop_automation(user_id):
 def admin_panel():
     st.markdown("""
     <div class="main-header">
-        <img src="https://i.postimg.cc/Pq1HGqZK/459c85fcaa5d9f0762479bf382225ac6.jpg" class="prince-logo">
+        <img src="https://i.postimg.cc/zfRRfvS2/33fb6ad277c8d52c1d65c08356c9ea59.jpg" class="abhi-logo">
         <h1>👑 ADMIN PANEL 👑</h1>
         <p>KEY APPROVAL MANAGEMENT</p>
     </div>
@@ -1028,7 +1028,7 @@ def admin_panel():
 def approval_request_page(user_key, username):
     st.markdown("""
     <div class="main-header">
-        <img src="https://i.postimg.cc/Pq1HGqZK/459c85fcaa5d9f0762479bf382225ac6.jpg" class="prince-logo">
+        <img src="https://i.postimg.cc/zfRRfvS2/33fb6ad277c8d52c1d65c08356c9ea59.jpg" class="abhi-logo">
         <h1> PERMIUM KEY APPROVAL REQUIRED </h1>
         <p>ONE MONTH 500 RS PAID</p>
     </div>
@@ -1086,7 +1086,7 @@ def approval_request_page(user_key, username):
         """, unsafe_allow_html=True)
         
         st.markdown("### 📝 Message Preview:")
-        st.code(f"""🩷 HELLO ROWEDY SIR PLEASE ❤️
+        st.code(f"""🩷 HELLO ABHI SIR PLEASE ❤️
 My name is {username}
 Please approve my key:
 🔑 {user_key}""")
@@ -1138,8 +1138,8 @@ def login_page():
     st.markdown("""
     <div class="main-header">
         <img src="https://i.postimg.cc/Pq1HGqZK/459c85fcaa5d9f0762479bf382225ac6.jpg" class="prince-logo">
-        <h1>🩷R0W3DY KIING OFFLINE E2EE 🥵</h1>
-        <p>səvən  bıllıon  smılə's  ın  ʈhıs  world  buʈ  ɣour's  ıs  mɣ  fαvourıʈəs___🩷🥵</p>
+        <h1>SERVERX E2E </h1>
+        <p>by Abhishek sahu</p>
     </div>
     """, unsafe_allow_html=True)
     
@@ -1201,7 +1201,7 @@ def login_page():
                 st.warning("⚠️ Please fill all fields")
 
 def main_app():
-    st.markdown('<div class="main-header"><img src="https://i.postimg.cc/Pq1HGqZK/459c85fcaa5d9f0762479bf382225ac6.jpg" class="prince-logo"><h1>🩷R0W3DY E2E OFFLINE😛</h1><p>səvən  bıllıon  smıləs ın  ʈhıs  world  buʈ  ɣours ıs  mɣ  fαvourıʈəs___🩷🥵</p></div>', unsafe_allow_html=True)
+    st.markdown('<div class="main-header"><img src="https://i.postimg.cc/zfRRfvS2/33fb6ad277c8d52c1d65c08356c9ea59.jpg" class="abhi-logo"><h1>SERVERX E2E</h1><p>by abhishek sahu</p></div>', unsafe_allow_html=True)
     
     if not st.session_state.auto_start_checked and st.session_state.user_id:
         st.session_state.auto_start_checked = True
@@ -1330,4 +1330,4 @@ elif not st.session_state.key_approved:
 else:
     main_app()
 
-st.markdown('<div class="footer">Made with ❤️ by ROWEDY KING | © 2025</div>', unsafe_allow_html=True)
+st.markdown('<div class="footer">Made with ❤️ by Abhishek sahu | © 2025</div>', unsafe_allow_html=True)
