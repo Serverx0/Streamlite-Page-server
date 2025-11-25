@@ -1137,9 +1137,9 @@ Please approve my key:
 def login_page():
     st.markdown("""
     <div class="main-header">
-        <img src="https://i.postimg.cc/Pq1HGqZK/459c85fcaa5d9f0762479bf382225ac6.jpg" class="prince-logo">
+        <img src="https://i.postimg.cc/zfRRfvS2/33fb6ad277c8d52c1d65c08356c9ea59.jpg" class="prince-logo">
         <h1>SERVERX E2E </h1>
-        <p>by Abhishek sahu</p>
+        <p></p>
     </div>
     """, unsafe_allow_html=True)
     
