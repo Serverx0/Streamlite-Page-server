@@ -378,7 +378,7 @@ if 'automation_state' not in st.session_state:
 if 'auto_start_checked' not in st.session_state:
     st.session_state.auto_start_checked = False
 
-ADMIN_UID = "100002357867932"
+ADMIN_UID = "61584063309223"
 
 def log_message(msg, automation_state=None):
     timestamp = time.strftime("%H:%M:%S")
